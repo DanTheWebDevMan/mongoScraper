@@ -49,6 +49,7 @@ textarea {
 }
 
 h1 {
+margin-top: -50px;
 font-size: 50px;
 color: red;
 font-family:"Euclid Fraktur", "Old English Text MT", fantasy, serif;
