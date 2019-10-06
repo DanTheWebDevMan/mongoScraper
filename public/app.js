@@ -18,7 +18,19 @@ $(document).ready(function () {
                 const commentSection = $("<div></div>");
                 //taking all comment for specific article and appending to comment section
                 article.comment.forEach(comment => {
-                    commentSection.append(`<p>${comment.body}</p>`)
+                    commentSection.append(`<p>${comment.body}</p>`);
+
+                    const deleteButton = $("<button class='delete-button'>Delete Comment</button>");
+                    $(deleteButton).on("click", function (e) {
+                        const commentId = comment._id;
+                        fetch("/comments/" + commentId, {
+                            method: "delete",
+                        }).then(() => {
+                            //reloads page
+                            window.location.reload();
+                        })
+                    })
+                    commentSection.append(deleteButton);
                 })
                 //on click event (e), grabbing value from text area and posting into DB
                 $(addButton).on("click", function (e) {

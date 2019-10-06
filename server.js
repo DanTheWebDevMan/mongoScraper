@@ -132,6 +132,13 @@ app.post("/articles/:id", function (req, res) {
         });
 });
 
+app.delete("/comments/:id", function (req, res) {
+    db.Comment.deleteOne({
+        "_id": req.params.id
+    }).then(() => res.json("Deleted"))
+})
+
+
 // Start the server
 app.listen(PORT, function () {
     console.log("App running on port " + PORT + "!");
