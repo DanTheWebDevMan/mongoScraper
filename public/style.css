@@ -1,0 +1,83 @@
+body {
+    background-color: #F2F6D0;
+    font-family: 'Open Sans', sans-serif;
+    background: url("https://vineyardranchseniorliving.com/wp-content/uploads/2015/09/vintage-texture-bg.jpg");
+
+}
+
+#wrapper {
+    width: 960px;
+    text-align: center;
+    padding-top: 5%;
+    width: 100%;
+}
+
+#articles {
+    display: inline-block;
+    overflow: auto;
+    width: 80%;
+    /* height: 700px; */
+}
+
+#notes {
+    float: right;
+    width: 30%;
+}
+
+textarea,
+input {
+    display: block;
+    width: 100%;
+    background-color: #FCF5C7;
+}
+
+input {
+    height: 36px;
+    font-size: 24px;
+}
+
+textarea {
+    height: 50px;
+    font-size: 18px ;
+    font-style: italic;
+    margin-top: 25px;
+    padding-top: 15px;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    color: gray;
+}
+
+h1 {
+font-size: 50px;
+color: red;
+font-family:"Euclid Fraktur", "Old English Text MT", fantasy, serif;
+}
+
+p{
+    font-style: bold italic;
+    font-size: 20px;
+
+}
+
+.delete-button{
+    background-color: red;
+    color: white;
+}
+
+.submit {
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+}
+
+h3 {
+    color: blue;
+    font-size: 24px;
+    font-style:strong;
+}
+
+.summary {
+    font-style: italic;
+}
+
