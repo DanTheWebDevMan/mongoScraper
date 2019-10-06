@@ -67,14 +67,6 @@ app.get("/scrape", function (req, res) {
                 console.log(err)
             )
 
-
-            //                 // View the added result in the console
-            //                 console.log(dbArticle);
-            //             })
-            //             .catch(function (err) {
-            //                 // If an error occurred, log it
-            //                 console.log(err);
-            //             });
         });
 
         // Send a message to the client
